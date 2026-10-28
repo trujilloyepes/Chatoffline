@@ -3,6 +3,9 @@ package es.iesfranciscodelosrios.chat;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 
+/**
+ * Esto es un comentario de prueba para IntelliJ
+ */
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Usuario {
     private String nombre;
