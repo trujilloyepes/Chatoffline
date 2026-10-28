@@ -2,19 +2,22 @@ package es.iesfranciscodelosrios.chat;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlAttribute;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Mensaje {
+
+    @XmlAttribute
+    private int id;
+
     private String emisor;
     private String destinatario;
     private String contenido;
-    private String fecha; // ISO-8601, por ejemplo: 2026-10-26T13:45:00
-    private String adjuntoRuta; // Puede ser null si no hay adjunto.
-    private String adjuntoNombre;
-    private long adjuntoTamano;
-    private String adjuntoTipo;
+    private String fecha;     // formato ISO-8601, por ejemplo: 2026-10-28T13:45:30
+    private Adjunto adjunto;  // null si el mensaje no tiene adjunto
 
-    public Mensaje() { } // JAXB necesita un constructor sin argumentos.
+    // Constructor vacío.
+    public Mensaje() { }
 
     public Mensaje(String emisor, String destinatario, String contenido, String fecha) {
         this.emisor = emisor;
@@ -23,6 +26,8 @@ public class Mensaje {
         this.fecha = fecha;
     }
 
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
     public String getEmisor() { return emisor; }
     public void setEmisor(String emisor) { this.emisor = emisor; }
     public String getDestinatario() { return destinatario; }
@@ -31,12 +36,6 @@ public class Mensaje {
     public void setContenido(String contenido) { this.contenido = contenido; }
     public String getFecha() { return fecha; }
     public void setFecha(String fecha) { this.fecha = fecha; }
-    public String getAdjuntoRuta() { return adjuntoRuta; }
-    public void setAdjuntoRuta(String adjuntoRuta) { this.adjuntoRuta = adjuntoRuta; }
-    public String getAdjuntoNombre() { return adjuntoNombre; }
-    public void setAdjuntoNombre(String adjuntoNombre) { this.adjuntoNombre = adjuntoNombre; }
-    public long getAdjuntoTamano() { return adjuntoTamano; }
-    public void setAdjuntoTamano(long adjuntoTamano) { this.adjuntoTamano = adjuntoTamano; }
-    public String getAdjuntoTipo() { return adjuntoTipo; }
-    public void setAdjuntoTipo(String adjuntoTipo) { this.adjuntoTipo = adjuntoTipo; }
+    public Adjunto getAdjunto() { return adjunto; }
+    public void setAdjunto(Adjunto adjunto) { this.adjunto = adjunto; }
 }
