@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<usuarios>
+    <usuario>
+        <nombre>ana</nombre>
+    </usuario>
+    <usuario>
+        <nombre>luis</nombre>
+    </usuario>
+    <usuario>
+        <nombre>dani</nombre>
+    </usuario>
+</usuarios>

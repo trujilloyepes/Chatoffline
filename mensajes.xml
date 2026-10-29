@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mensajes>
+    <mensaje id="1">
+        <emisor>ana</emisor>
+        <destinatario>luis</destinatario>
+        <contenido>hola</contenido>
+        <fecha>2026-10-28T09:41:22</fecha>
+    </mensaje>
+    <mensaje id="2">
+        <emisor>luis</emisor>
+        <destinatario>ana</destinatario>
+        <contenido>hola</contenido>
+        <fecha>2026-10-28T09:41:35</fecha>
+    </mensaje>
+    <mensaje id="3">
+        <emisor>ana</emisor>
+        <destinatario>luis</destinatario>
+        <contenido>hola</contenido>
+        <fecha>2026-10-28T09:42:01</fecha>
+    </mensaje>
+    <mensaje id="4">
+        <emisor>ana</emisor>
+        <destinatario>luis</destinatario>
+        <contenido>adios</contenido>
+        <fecha>2026-10-28T09:43:04</fecha>
+    </mensaje>
+    <mensaje id="5">
+        <emisor>dani</emisor>
+        <destinatario>ana</destinatario>
+        <contenido>te quiero</contenido>
+        <fecha>2026-10-29T09:57:23</fecha>
+    </mensaje>
+</mensajes>
